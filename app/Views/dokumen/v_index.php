@@ -23,18 +23,19 @@
                 }
                 ?>
                 <div class="table-responsive">
-                <table class = "table table-bordered" id ="example1">
+                <table class = "table table-striped table-bordered" id ="example1">
                     <thead>
                         <tr>
                             <th class="align-middle" width="10px">No</th>                        
                             <th class="align-middle">Deskripsi</th>
                             <th class="align-middle">Komponen</th>
                             <th class="align-middle">Sub-Komponen</th>
+                            <th class="align-middle">Sub2-Komponen</th>
                             <th class="align-middle">Tanggal Upload</th>
                             <th class="align-middle">Nama User</th>
                             <th class="align-middle">Status</th>
                             <th class="align-middle">File</th>
-                            <th class="text-center align-middle" width="120px">Aksi</th>                        
+                            <th class="text-center align-middle" width="100px">Aksi</th>                        
                         </tr>
                     </thead>
                     <tbody>
@@ -45,6 +46,7 @@
                                 <td class="align-middle"><?= $value['deskripsi'];?></td>
                                 <td class="align-middle" ><?= $value['nama_komponen'];?></td>
                                 <td class="align-middle"><?= $value['nama_sub_k'];?></td>
+                                <td class="align-middle"><?= $value['nama_sub_sub_k'];?></td>
                                 <td class="align-middle"><?= $value['tgl_upload']; ?></td>
                                 <td class="align-middle"><?= $value['nama_user']; ?></td>
                                 <?php if($value['status']==0){ ?>
@@ -56,19 +58,22 @@
                                       <span class="badge badge-success">Terverifikasi</span>
                                     </td>
                                 <?php } ?>
-                                <td class="text-center align-middle"><a href="<?= base_url('dokumen/viewpdf/'.$value['id_dokumen']) ?>" target="_blank" class="btn btn-default btn-sm" > 
-                                <i class="fas fa-file fa-2x"></i></a><br><?= number_format($value['ukuran_dokumen'],0); ?> Byte</td>
+                                <td class="text-center align-middle"><a href="<?= base_url('dokumen/viewpdf/'.$value['id_dokumen']) ?>" target="_blank" class="btn btn-secondary btn-sm" > 
+                                <i class="fas fa-file fa-2x"></i></a></td>
                                 <td class="text-center align-middle">
-                                <?php if(session()->get('level')==1){ ?>
-                                <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-check"></i>  Verifikasi</a>
-                                <hr>
+                                <?php if(session()->get('level')==1 and $value['status']==0){ ?>
+                                    <a href="<?= base_url('dokumen/verifikasi/'.$value['id_dokumen'])?>" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="Verifikasi"><i class="fas fa-check"></i></a>
+                                    <hr>
                                 <?php }?>
-                                <a href="<?= base_url('dokumen/edit/'.$value['id_dokumen'])?>" class="btn btn-info btn-sm">
+                                <?php if($value['status']==0){ ?>
+                                    <a href="<?= base_url('dokumen/edit/'.$value['id_dokumen'])?>" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="Edit">
                                     <i class="fas fa-pencil-alt"></i>
-                                    Edit</a>
+                                    </a>
+                                <?php } ?>
                                     <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id_dokumen'] ?>">
-                                    <i class="fas fa-trash"></i>
-                                    Delete</button>
+                                    <span data-toggle="tooltip" data-placement="bottom" title="Hapus">
+                                    <i class="fas fa-trash"></i></span>
+                                    </button>
                                 </td>
                             </tr>
                         <?php } ?> 

@@ -20,6 +20,7 @@ class Filters extends BaseConfig
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
 		'FilterAuth' => \App\Filters\FilterAuth::class,
+		'admin' => \App\Filters\Admin::class,
 	];
 
 	/**
@@ -44,6 +45,7 @@ class Filters extends BaseConfig
 				'komponen', 'komponen/*',
 				'dokumen', 'dokumen/*',
 				'user', 'user/*',
+				'profile', 'profile/*',
 			]],
 		],
 	];
@@ -68,5 +70,12 @@ class Filters extends BaseConfig
 	 *
 	 * @var array
 	 */
-	public $filters = [];
+	public $filters = [
+		'admin' => [
+			'before' => [
+				'user','user/*',
+				'dokumen/verifikasi/*'
+			]
+		]
+	];
 }

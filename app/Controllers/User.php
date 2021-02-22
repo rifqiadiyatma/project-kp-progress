@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 use App\Models\ModelUser;
-use App\Models\ModelDep;
 
 class User extends BaseController
 {
@@ -159,8 +158,10 @@ class User extends BaseController
                 $this->ModelUser->edit($data);
             } else {
                 $user = $this->ModelUser->detail_data($id_user);
-                if($user['foto'] != ""){
+                if($user['foto']!= "avatar5.png"){
+                    if($user['foto'] != ""){
                     unlink('foto/'.$user['foto']);
+                    }
                 }
                 $nama_file = $foto->getRandomName();
                 $data = array(
@@ -188,9 +189,11 @@ class User extends BaseController
     public function delete($id_user)
     {
         $user = $this->ModelUser->detail_data($id_user);
-                if($user['foto'] != ""){
-                    unlink('foto/'.$user['foto']);
-                }
+                if($user['foto']!= "avatar5.png"){
+                    if($user['foto'] != ""){
+                        unlink('foto/'.$user['foto']);
+                    }
+                }    
         $data = array(
             'id_user' => $id_user
         );

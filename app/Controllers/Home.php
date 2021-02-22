@@ -16,8 +16,8 @@ class Home extends BaseController
 			'isi' => 'v_home',
 			'page' => 'Home',
 			'total_dokumen' => $this->ModelHome->total_dokumen(),
-			'total_komponen' => $this->ModelHome->total_komponen(),
-			'total_sub' => $this->ModelHome->total_subk(),
+			'total_blmverif' => $this->ModelHome->total_blmverif(),
+			'total_verif' => $this->ModelHome->total_verif(),
 			'total_user' => $this->ModelHome->total_user(),
 
 		);

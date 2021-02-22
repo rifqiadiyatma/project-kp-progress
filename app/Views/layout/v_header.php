@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo $title ?></title>
+  <title><?php echo 'BPS | '.$title ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -22,8 +22,6 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <!-- Select 2 -->
-  <!-- <link rel="stylesheet" href="/assets/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"> -->
+  <link rel="icon" href="<?=base_url('assets/bps.png')?>" type="image/gif">
   
 </head>

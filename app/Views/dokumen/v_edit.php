@@ -31,7 +31,8 @@
                     <div class="form-group">
                         <label>Komponen</label>
                         <select name="id_komponen" class="form-control" id="komponen">
-                            <option value="<?= $dokumen['id_komponen']?>"><?= $dokumen['nama_komponen'] ?></option>
+                            <option value="">--Pilih Komponen--</option>
+                            <option value="<?= $dokumen['id_komponen']?>" selected><?= $dokumen['nama_komponen'] ?></option>
                             <?php foreach ($komponen as $key => $value) { ?>
                                 <option value="<?= $value['id_komponen'] ?>"><?= $value['nama_komponen'] ?></option>
                             <?php } ?>

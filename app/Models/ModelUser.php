@@ -28,4 +28,9 @@ class ModelUser extends Model
     {
         $this->db->table('tbl_user')->where('id_user',$data['id_user'])->delete($data);
     }
+
+    public function getProfile()
+    {
+        return $this->db->table('tbl_user')->where('id_user',session()->get('id_user'))->get()->getRowArray();
+    }
 }

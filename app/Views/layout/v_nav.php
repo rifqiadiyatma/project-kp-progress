@@ -10,6 +10,7 @@
       </li>
       </ul>
     <ul class="navbar-nav ml-auto">
+    <li class="nav-item align-middle"><a class="nav-link" href="#" role="button"><i class="fas fa-file-alt"></i></a></li>
     <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
           <img src="<?= base_url('foto/'.session()->get('foto'))?>" class="user-image img-circle elevation-2" alt="User Image">
@@ -28,7 +29,7 @@
           </li>
           <!-- Menu Footer-->
           <li class="user-footer">
-            <a href="#" class="btn btn-default">Profile</a>
+            <a href="<?= base_url('profile')?>" class="btn btn-default">Profile</a>
             <a href="<?= base_url('auth/logout')?>" class="btn btn-default float-right">Logout</a>
           </li>
         </ul>

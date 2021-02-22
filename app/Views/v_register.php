@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/assets/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="icon" href="<?=base_url('assets/bps.png')?>" type="image/gif">
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
@@ -89,6 +90,7 @@
         </div>
         <div class="row">
           <div class="col-8">
+              <a href="<?= base_url('auth/index')?>" class="text-center">Sudah punya akun?</a>
           </div>
           <!-- /.col -->
           <div class="col-4">
@@ -97,9 +99,6 @@
           <!-- /.col -->
         </div>
       <?php echo form_close() ?>
-
-
-      <a href="<?= base_url('auth/index')?>" class="text-center">Sudah punya akun?</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
@@ -112,58 +111,7 @@
 <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/assets/dist/js/adminlte.min.js"></script>
-<!-- <script type="text/javascript">
-$(document).ready(function () {
-  $.validator.setDefaults({
-    submitHandler: function () {
-      alert( "Form successful submitted!" );
-    }
-  });
-  $('#register').validate({
-    rules: {
-      nama_user:{
-          required: true,
-      }
-      email: {
-        required: true,
-        email: true,
-      },
-      password: {
-        required: true,
-        minlength: 5
-      },
-      terms: {
-        required: true
-      },
-    },
-    messages: {
-      nama_user:{
-          required:"Masukin yang bener",
-      }
-      email: {
-        required: "Please enter a email address",
-        email: "Please enter a vaild email address"
-      },
-      password: {
-        required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
-      },
-      terms: "Please accept our terms"
-    },
-    errorElement: 'span',
-    errorPlacement: function (error, element) {
-      error.addClass('invalid-feedback');
-      element.closest('.form-group').append(error);
-    },
-    highlight: function (element, errorClass, validClass) {
-      $(element).addClass('is-invalid');
-    },
-    unhighlight: function (element, errorClass, validClass) {
-      $(element).removeClass('is-invalid');
-    }
-  });
-});
-</script> -->
+
 <script>
     window.setTimeout(function(){
         $('.alert').fadeTo(500,0).slideUp(500, function(){

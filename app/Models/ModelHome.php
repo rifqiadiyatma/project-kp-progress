@@ -9,6 +9,16 @@ class ModelHome extends Model
         return $this->db->table('tbl_dokumen')->countAll();
     }
 
+    public function total_verif()
+    {
+        return $this->db->table('tbl_dokumen')->where('status',1)->countAllResults();
+    }
+
+    public function total_blmverif()
+    {
+        return $this->db->table('tbl_dokumen')->where('status',0)->countAllResults();
+    }
+
     public function total_komponen()
     {
         return $this->db->table('tbl_komponen')->countAll();

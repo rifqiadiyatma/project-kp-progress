@@ -16,10 +16,12 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
+          <a href ="<?= base_url('profile')?>">
           <img src="<?= base_url('foto/'.session()->get('foto'))?>" class="img-circle elevation-2" alt="User Image">
+          </a>
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?= session()->get('nama_user');?></a>
+          <a href="<?= base_url('profile')?>" class="d-block"><?= session()->get('nama_user');?></a>
         </div>
       </div>
 
@@ -36,7 +38,21 @@
           </li>
 
           <li class="nav-item nav-link nav-header mt-0">MENU</li>
-          <li <?php if($page == 'dokumen' or $page == 'Manajemen Perubahan' or $page =='Penataan Tatalaksana' or $page =='Penataan Manajemen SDM' or $page =='Penguatan Akuntabilitas' or $page =='Penguatan Pengawasan' or $page =='Pelayanan Publik'){ echo "class='nav-item has-treeview menu-open'";} else echo "class='nav-item has-treeview'" ;?>>
+          <li class="nav-item">
+            <a href="<?= base_url('dokumen')?>" <?php if($page == "dokumen"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+              <i class="nav-icon fas fa-folder-open"></i>
+              <p>Lihat Dokumen</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url('dokumen/add')?>" <?php if($page == "add dokumen"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+              <i class="nav-icon fas fa-upload"></i>
+              <p>Upload Dokumen</p>
+            </a>
+          </li>
+          
+
+          <li <?php if($page == 'Manajemen Perubahan' or $page =='Penataan Tatalaksana' or $page =='Penataan Manajemen SDM' or $page =='Penguatan Akuntabilitas' or $page =='Penguatan Pengawasan' or $page =='Pelayanan Publik'){ echo "class='nav-item has-treeview menu-open'";} else echo "class='nav-item has-treeview'" ;?>>
             <a href="#" <?php if($page == 'Manajemen Perubahan' or $page =='Penataan Tatalaksana' or $page =='Penataan Manajemen SDM' or $page =='Penguatan Akuntabilitas' or $page =='Penguatan Pengawasan' or $page =='Pelayanan Publik'){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
               <i class="nav-icon fab fa-buffer"></i>
               <p>
@@ -84,12 +100,15 @@
               </li>
             </ul>
           </li>
+
+          <?php if(session()->get('level')==1){ ?>
           <li class="nav-item">
             <a href="<?= base_url('user')?>" <?php if($page == "User"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
               <i class="nav-icon fas fa-user"></i>
               <p>User</p>
             </a>
           </li>
+          <?php } ?>
           <li class="nav-item">
             <a href="<?= base_url('auth/logout')?>" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
@@ -109,11 +128,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1><?= $title ?></h1>
+            <h1 class="font-weight-light"><?= $title ?></h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Sistem BPS</a></li>
+              <li class="breadcrumb-item"><a href="<?= base_url() ?>">Sistem BPS</a></li>
               <li class="breadcrumb-item active"><?= $title ?></li>
             </ol>
           </div>

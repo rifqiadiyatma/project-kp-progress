@@ -1,7 +1,7 @@
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-2">
         </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card card-outline card-primary">
               <div class="card-header">
                 <h3 class="card-title">Tambah Dokumen</h3>
@@ -31,7 +31,7 @@
                     <div class="form-group">
                         <label for="komponen">Komponen</label>
                         <select name="id_komponen" class="form-control" id="komponen">
-                            <option value="">--Pilih Kategori--</option>
+                            <option value="">--Pilih Komponen--</option>
                             <?php foreach ($komponen as $key => $value) { ?>
                                 <option value="<?= $value['id_komponen'] ?>"><?= $value['nama_komponen'] ?></option>
                             <?php } ?>
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="subsubkomponen">Sub Komponen</label>
+                        <label for="subsubkomponen">Sub Sub Komponen</label>
                         <select name="id_sub_sub_k" class="form-control" id="subsubkomponen">
                         <option value="">--Pilih Sub Sub Komponen--</option>
                         </select>
@@ -68,6 +68,6 @@
               </div>
             <!-- /.card -->
           </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
     </div>
 </div>

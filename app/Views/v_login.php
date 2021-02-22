@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo $title ?></title>
+  <title><?php echo 'BPS | '.$title ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,6 +17,13 @@
   <link rel="stylesheet" href="/assets/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="icon" href="<?=base_url('assets/bps.png')?>" type="image/gif">
+  <style type="text/css">
+        .login-page{
+            background: url('https://subtlepatterns.com/patterns/kindajean.png'); 
+
+        }
+  </style>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -79,12 +86,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
+            <a href="<?= base_url('auth/register') ?>" class="text-center">Register a new membership</a>
           </div>
           <!-- /.col -->
           <div class="col-4">
@@ -93,13 +95,6 @@
           <!-- /.col -->
         </div>
       <?php echo form_close() ?>
-
-
-
-
-      <p class="mb-0">
-        <a href="<?= base_url('auth/register') ?>" class="text-center">Register a new membership</a>
-      </p>
     </div>
     <!-- /.login-card-body -->
   </div>

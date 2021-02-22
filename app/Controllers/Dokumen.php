@@ -8,6 +8,7 @@ class Dokumen extends BaseController
 {
     public function __construct(){
         helper('form');
+        helper('text');
         $this->ModelDokumen = new ModelDokumen();
         $this->ModelKomponen = new ModelKomponen();
     }
@@ -28,9 +29,8 @@ class Dokumen extends BaseController
 		$data = array(
             'title' => 'Tambah Dokumen',
             'komponen' => $this->ModelKomponen->all_data(),
-            // 'sub_komponen' => $this->ModelKomponen->getData(),
 			'isi' => 'dokumen/v_add',
-            'page' => 'dokumen'
+            'page' => 'add dokumen'
 		);
 		return view('layout/v_wrapper',$data);
 	}
@@ -92,7 +92,8 @@ class Dokumen extends BaseController
             //mengambil file
             $nama_dokumen = $this->request->getFile('nama_dokumen');
             //random nama file
-            $nama_file = $nama_dokumen->getRandomName();
+            $nama_file = $nama_dokumen->getName();
+            $nama_filebaru = '[BPS-'.date('md').random_string('alnum',2).'] '.$nama_file;
             //ukuran file
             $ukuran_dokumen = $nama_dokumen->getSize('mb');
             // jika valid
@@ -100,14 +101,14 @@ class Dokumen extends BaseController
                 'deskripsi' => $this->request->getPost('deskripsi'),
                 'tgl_upload' => date('Y-m-d'),
                 'id_user' => session()->get('id_user'),
-                'nama_dokumen' => $nama_file,
+                'nama_dokumen' => $nama_filebaru,
                 'ukuran_dokumen' => $ukuran_dokumen,
                 'id_komponen' => $this->request->getPost('id_komponen'),
                 'id_sub_k' => $this->request->getPost('id_sub_k'),
                 'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k')
             );
 
-            $nama_dokumen->move('file_dokumen',$nama_file); //directory up file
+            $nama_dokumen->move('file_dokumen',$nama_filebaru); //directory up file
             $this->ModelDokumen->add($data);
             session()->setFlashdata('pesan','Data berhasil ditambahkan');
             return redirect()->to(base_url('dokumen'));
@@ -148,6 +149,27 @@ class Dokumen extends BaseController
                     'max_size' => 'Ukuran {field} maksimal 2048 kb'
                 ]
             ],
+            'id_komponen' => [
+                'label'  => 'Komponen',
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib Diisi',
+                ]
+            ],
+            'id_sub_k' => [
+                'label'  => 'Sub Komponen',
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib Diisi',
+                ]
+            ],
+            'id_sub_sub_k' => [
+                'label'  => 'Sub Sub Komponen',
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib Diisi',
+                ]
+            ],
         ])){
             //mengambil file dokumen
             $nama_dokumen = $this->request->getFile('nama_dokumen');
@@ -166,20 +188,21 @@ class Dokumen extends BaseController
                 if($dokumen['nama_dokumen'] != ""){
                     unlink('file_dokumen/'.$dokumen['nama_dokumen']);
                 }
-                $nama_file = $nama_dokumen->getRandomName();
+                $nama_file = $nama_dokumen->getName();
+                $nama_filebaru = '[BPS-'.date('md').random_string('alnum',2).'] '.$nama_file;
                 $ukuran_dokumen = $nama_dokumen->getSize('mb');
                 $data = array(
                     'id_dokumen' => $id_dokumen,
                     'deskripsi' => $this->request->getPost('deskripsi'),
                     'id_user' => session()->get('id_user'),
-                    'nama_dokumen' => $nama_file,
+                    'nama_dokumen' => $nama_filebaru,
                     'ukuran_dokumen' => $ukuran_dokumen,
                     'id_komponen' => $this->request->getPost('id_komponen'),
                     'id_sub_k' => $this->request->getPost('id_sub_k'),
                     'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k')
                 );
     
-                $nama_dokumen->move('file_dokumen',$nama_file); //directory up file
+                $nama_dokumen->move('file_dokumen',$nama_filebaru); //directory up file
                 $this->ModelDokumen->edit($data);
             }
 
@@ -204,7 +227,7 @@ class Dokumen extends BaseController
         );
         $this->ModelDokumen->delete_data($data);
         session()->setFlashdata('pesan','Data berhasil dihapus');
-        return redirect()->to(base_url('dokumen'));
+        return redirect()->back();
     }
 
     public function viewpdf($id_dokumen)
@@ -216,5 +239,16 @@ class Dokumen extends BaseController
             'page' => 'dokumen'
 		);
 		return view('layout/v_wrapper',$data);
+    }
+
+    public function verifikasi($id_dokumen)
+    {
+        $data = array(
+            'id_dokumen' => $id_dokumen,
+            'status' => 1,
+        );
+        $this->ModelDokumen->edit($data);
+        session()->setFlashdata('pesan','File Berhasil Diverifikasi');
+        return redirect()->back();
     }
 }
