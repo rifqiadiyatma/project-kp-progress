@@ -57,3 +57,92 @@
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
+
+          <div class="col-md-8 mt-4">
+            <div class="card card-outline card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Dokumen yang Masuk</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+              <p class="mb-1">Manajemen Perubahan</p>
+                <div class="progress mb-0">
+                  <div class="progress-bar bg-success" style="width:<?= ($total_komponen1/20)*100 ?>%">
+                    <?php echo round(($total_komponen1/20)*100,2); ?> %
+                  </div>
+                </div>
+                <div class="mb-3 text-right"><small class="font-weight-light">Progress : <?= $total_komponen1?>/20 File Terupload</small></div>
+                
+                <p class="mb-1">Penataan Tatalaksana</p>
+                <div class="progress mb-0">
+                  <div class="progress-bar bg-info" style="width:<?= ($total_komponen2/20)*100 ?>%">
+                    <?php echo round(($total_komponen2/20)*100,2); ?> %
+                  </div>
+                </div>
+                <div class="mb-3 text-right"><small class="font-weight-light">Progress : <?= $total_komponen2?>/20 File Terupload</small></div>
+
+                <p class="mb-1">Penataan Manajemen SDM</p>
+                <div class="progress mb-0">
+                  <div class="progress-bar bg-warning" style="width:<?= ($total_komponen3/20)*100 ?>%">
+                      <?php echo round(($total_komponen3/20)*100,2); ?> %
+                  </div>
+                </div>
+                <div class="mb-3 text-right"><small class="font-weight-light">Progress : <?= $total_komponen3?>/20 File Terupload</small></div>
+
+                <p class="mb-1">Penguatan Akuntabilitas</p>
+                <div class="progress mb-0">
+                  <div class="progress-bar bg-danger" style="width:<?= ($total_komponen4/20)*100 ?>%">
+                      <?php echo round(($total_komponen4/20)*100,2); ?> %
+                  </div>
+                </div>
+                <div class="mb-3 text-right"><small class="font-weight-light">Progress : <?= $total_komponen4?>/20 File Terupload</small></div>
+
+                <p class="mb-1">Penguatan Pengawasan</p>
+                <div class="progress mb-0">
+                  <div class="progress-bar bg-primary" style="width:<?= ($total_komponen5/20)*100 ?>%">
+                      <?php echo round(($total_komponen5/20)*100,2); ?> %
+                  </div>
+                </div>
+                <div class="mb-3 text-right"><small class="font-weight-light">Progress : <?= $total_komponen5?>/20 File Terupload</small></div>
+
+                <p class="mb-1">Peningkatan Pelayanan Publik</p>
+                <div class="progress mb-0">
+                  <div class="progress-bar bg-indigo" style="width:<?= ($total_komponen6/20)*100 ?>%">
+                      <?php echo round(($total_komponen6/20)*100,2); ?> %
+                  </div>
+                </div>
+                <div class="mb-3 text-right"><small class="font-weight-light">Progress : <?= $total_komponen6?>/20 File Terupload</small></div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+
+<div class ="col-md-4">
+  <div class="card card-outline card-primary mt-4">
+    <div class="card-header">
+      <h3 class="card-title"><i class="fas fa-hashtag mr-2"></i>Media Sosial</h3>
+    </div>
+      <div class="card-body">    
+        <ul style="list-style-type: none; margin:0; padding:0;">
+        <li><i class ="fab fa-instagram mr-2" style="color:purple;"></i><a href="https://www.instagram.com/bpsbandarlampung/" target="_blank">Instagram</a></li>
+        <li><i class ="fab fa-facebook mr-2" style="color:blue;"></i><a href="https://web.facebook.com/BPSKotaB.Lampung" target="_blank">Facebook</a></li>
+        <li><i class ="fab fa-twitter mr-2" style="color:lightblue"></i><a href="https://twitter.com/bps_statistics" target="_blank">Twitter</a></li>
+        <li><i class ="fab fa-youtube mr-2" style="color:red"></i><a href="https://www.youtube.com/channel/UCYxOi_FgBHcOdgj0WYoGvmA" target="_blank">Youtube</a></li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="card card-outline card-primary mt-4">
+    <div class="card-header">
+      <h3 class="card-title"><i class="fas fa-link mr-2"></i>Website Resmi</h3>
+    </div>
+      <div class="card-body mx-auto">
+        <img class="img-thumbnail" src ="<?= base_url('assets/qrcode.png')?>" width=150px height=150px>
+      </div>
+      <div class="card-footer mx-auto"><a href="https://bandarlampungkota.bps.go.id/" target="_blank">Link Website BPS</a></div>
+  </div>
+
+</div>
+
+

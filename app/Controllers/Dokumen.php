@@ -61,10 +61,10 @@ class Dokumen extends BaseController
             ],
             'nama_dokumen' => [
                 'label'  => 'File Dokumen',
-                'rules'  => 'uploaded[nama_dokumen]|max_size[nama_dokumen,2048]|ext_in[nama_dokumen,pdf,jpg,doc,xls,xlsx,jpeg,png,docx]',
+                'rules'  => 'uploaded[nama_dokumen]|max_size[nama_dokumen,5120]|ext_in[nama_dokumen,pdf,jpg,doc,xls,xlsx,jpeg,png,docx]',
                 'errors' => [
                     'upload' => '{field} Wajib Diisi',
-                    'max_size' => 'Ukuran {field} maksimal 2048 kb'
+                    'max_size' => 'Ukuran {field} maksimal 5 MB'
                 ]
             ],
             'id_komponen' => [
@@ -105,7 +105,8 @@ class Dokumen extends BaseController
                 'ukuran_dokumen' => $ukuran_dokumen,
                 'id_komponen' => $this->request->getPost('id_komponen'),
                 'id_sub_k' => $this->request->getPost('id_sub_k'),
-                'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k')
+                'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k'),
+                'id_periode' => date('Y') % 2020,
             );
 
             $nama_dokumen->move('file_dokumen',$nama_filebaru); //directory up file
@@ -144,9 +145,9 @@ class Dokumen extends BaseController
             ],
             'nama_dokumen' => [
                 'label'  => 'File Dokumen',
-                'rules'  => 'max_size[nama_dokumen,2048]|ext_in[nama_dokumen,pdf,doc,jpg,xls,xlsx,jpeg,png,docx]',
+                'rules'  => 'max_size[nama_dokumen,5120]|ext_in[nama_dokumen,pdf,doc,jpg,xls,xlsx,jpeg,png,docx]',
                 'errors' => [
-                    'max_size' => 'Ukuran {field} maksimal 2048 kb'
+                    'max_size' => 'Ukuran {field} maksimal 5 MB'
                 ]
             ],
             'id_komponen' => [

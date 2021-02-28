@@ -46,6 +46,7 @@ class Filters extends BaseConfig
 				'dokumen', 'dokumen/*',
 				'user', 'user/*',
 				'profile', 'profile/*',
+				'periode', 'periode/*'
 			]],
 		],
 	];
@@ -74,7 +75,8 @@ class Filters extends BaseConfig
 		'admin' => [
 			'before' => [
 				'user','user/*',
-				'dokumen/verifikasi/*'
+				'dokumen/verifikasi/*',
+				'periode','periode/*'
 			]
 		]
 	];

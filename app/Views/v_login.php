@@ -20,8 +20,7 @@
   <link rel="icon" href="<?=base_url('assets/bps.png')?>" type="image/gif">
   <style type="text/css">
         .login-page{
-            background: url('https://subtlepatterns.com/patterns/kindajean.png'); 
-
+            background: url('<?= base_url('assets/email-pattern.png');?>') 
         }
   </style>
 </head>
@@ -31,12 +30,11 @@
     <a href="#"><b>Sistem</b>BPS</a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card shadow">
       <div class="mx-auto">
         <img class="mt-4 brand-link" src="/assets/bps.png" width="200px" > 
       </div>
     <div class="card-body login-card-body">
-
       <h5 class="login-box-msg">Silahkan Login</h2>
             <?php 
             $errors = session()->getFlashdata('errors');
@@ -86,8 +84,8 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <a href="<?= base_url('auth/register') ?>" class="text-center">Register a new membership</a>
-          </div>
+ 
+          </div> 
           <!-- /.col -->
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block">Login</button>
@@ -98,7 +96,10 @@
     </div>
     <!-- /.login-card-body -->
   </div>
+  </div>
+  
 </div>
+
 <!-- /.login-box -->
 
 <!-- jQuery -->

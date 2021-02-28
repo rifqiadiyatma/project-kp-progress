@@ -4,6 +4,7 @@
             <tr><th>Deskripsi</th><td> : </td> <td><?= $dokumen['deskripsi']?></td></tr>
             <tr><th>Komponen</th><td> : </td> <td><?= $dokumen['nama_komponen']?></td></tr>
             <tr><th>Sub Komponen</th><td> : </td> <td><?= $dokumen['nama_sub_k']?></td></tr>
+            <tr><th>Nama File</th><td> : </td> <td><?= substr($dokumen['nama_dokumen'],12)?></td></tr>
         </table>
     </div>
     <div class="col-sm-6">
@@ -11,6 +12,7 @@
             <tr><th>Tgl Upload</th><td> : </td> <td><?= $dokumen['tgl_upload']?></td></tr>
             <tr><th>Author</th><td> : </td> <td><?= $dokumen['nama_user']?></td></tr>
             <tr><th>Sub Sub Komponen</th><td> : </td> <td><?= $dokumen['nama_sub_sub_k']?></td></tr>
+            <tr><th>Status</th><td> : </td> <td><?php if($dokumen['status']==1){ echo "Terverifikasi";} else { echo "Belum Terverifikasi"; }?></td></tr>
         </table>
     </div>
 </div>

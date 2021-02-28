@@ -13,7 +13,7 @@
                     if(!empty($errors)){ ?>
                         <div class="alert alert-danger alert-dismissible">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <h5><i class="icon fas fa-ban"></i> Gagal dibuat</h5>
+                        <h5><i class="icon fas fa-ban"></i> Gagal</h5>
                         <ul>
                             <?php foreach ($errors as $key => $value) { ?>
                                 <li> <?= esc($value) ?> </li>

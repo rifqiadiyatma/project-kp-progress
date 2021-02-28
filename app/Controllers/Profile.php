@@ -23,17 +23,7 @@ class Profile extends BaseController
 
     public function edit($id_user)
     {
-        $data = array(
-            'title' => 'Edit Profile',
-            'user' => $this->ModelUser->detail_data($id_user),
-			'isi' => 'user/v_myprofile',
-            'page' =>'profile'
-		);
-		return view('layout/v_wrapper',$data);
-    }
-
-    public function update($id_user)
-    {
+        $user = $this->ModelUser->getProfile();
         if ($this->validate([
             'nama_user' => [
                 'label'  => 'Nama User',
@@ -48,6 +38,13 @@ class Profile extends BaseController
                 'errors' => [
                     'required' => '{field} Wajib Diisi',
                     'min_length' => '{field} minimal 8 karakter' 
+                ]
+            ],
+            'level' => [
+                'label'  => 'Level',
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib Diisi',
                 ]
             ],
             'foto' => [
@@ -67,12 +64,14 @@ class Profile extends BaseController
                     'nama_user' => $this->request->getPost('nama_user'),
                     'password' => $this->request->getPost('password'),
                 );
-
+    
                 $this->ModelUser->edit($data);
             } else {
-                $user = $this->ModelUser->detail_data($id_user);
-                if($user['foto'] != ""){
+                $user = $this->ModelUser->getProfile();
+                if($user['foto']!= "avatar5.png"){
+                    if($user['foto'] != ""){
                     unlink('foto/'.$user['foto']);
+                    }
                 }
                 $nama_file = $foto->getRandomName();
                 $data = array(
@@ -92,7 +91,7 @@ class Profile extends BaseController
         }else{
             //jika tidak
             session()->setFlashdata('errors',\Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('profile/edit/'.$id_user));
+            return redirect()->to(base_url('profile'));
         }
     }
 

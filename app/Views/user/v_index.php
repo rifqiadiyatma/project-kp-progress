@@ -6,7 +6,7 @@
 
                 <div class="card-tools">
                   <a href="<?= base_url('user/add') ?>" class="btn btn-primary btn-xs" >
-                        <i class="fas fa-plus"> Add Data</i>
+                        <i class="fas fa-plus"> Tambah User</i>
                   </a>
                 </div>
                 <!-- /.card-tools -->
@@ -22,7 +22,7 @@
                     echo '</div>';
                 }
                 ?>
-                <table class = "table table-bordered text-center" id ="example1">
+                <table class = "table table-bordered text-center" id ="example2">
                     <thead>
                         <tr>
                             <th class="text-center" width="20px">No</th>                        
@@ -46,7 +46,7 @@
                                         echo 'User';
                                     } ?>
                                 </td>
-                                <td><img src="<?= base_url('foto/'.$value['foto'])?>" width="100px"></td>
+                                <td><img src="<?= base_url('foto/'.$value['foto'])?>" width="100px" height="100px"></td>
                                 <td class="text-center">
                                 <a href="<?= base_url('user/edit/'.$value['id_user'])?>" class="btn btn-info btn-sm">
                                     <i class="fas fa-pencil-alt"></i>

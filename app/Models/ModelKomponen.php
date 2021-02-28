@@ -16,6 +16,8 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
+        ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',1)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
     
@@ -27,6 +29,8 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
+        ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',2)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
     
@@ -38,6 +42,8 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
+        ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',3)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
     
@@ -49,6 +55,8 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
+        ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',4)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
     
@@ -60,6 +68,8 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
+        ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',5)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
     
@@ -71,6 +81,8 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
+        ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',6)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
     

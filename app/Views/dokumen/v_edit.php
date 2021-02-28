@@ -64,7 +64,7 @@
                     
 
                     <div class="form-group text-right">
-                        <a href="<?= base_url('dokumen')?>" class="btn btn-success">Kembali</a>
+                        <a href="<?= previous_url() ?>" class="btn btn-success">Kembali</a>
                         <button type="submit" class="btn btn-primary">Update</button>
                     </div>
                     

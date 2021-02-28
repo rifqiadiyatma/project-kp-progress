@@ -109,6 +109,16 @@
             </a>
           </li>
           <?php } ?>
+
+          <?php if(session()->get('level')==1){ ?>
+          <li class="nav-item">
+            <a href="<?= base_url('periode')?>" <?php if($page == "Periode"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+              <i class="nav-icon fas fa-calendar-alt"></i>
+              <p>Periode</p>
+            </a>
+          </li>
+          
+          <?php } ?>
           <li class="nav-item">
             <a href="<?= base_url('auth/logout')?>" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>
