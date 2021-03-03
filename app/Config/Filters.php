@@ -46,7 +46,8 @@ class Filters extends BaseConfig
 				'dokumen', 'dokumen/*',
 				'user', 'user/*',
 				'profile', 'profile/*',
-				'periode', 'periode/*'
+				'periode', 'periode/*',
+				'panduan','panduan/*'
 			]],
 		],
 	];

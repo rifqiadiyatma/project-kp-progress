@@ -10,7 +10,23 @@
       </li>
       </ul>
     <ul class="navbar-nav ml-auto">
-    <li class="nav-item align-middle"><a class="nav-link" href="#" role="button"><i class="fas fa-file-alt"></i></a></li>
+    <li class="nav-item align-middle dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-file-alt"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header text-left">Panduan Sistem</span>
+          <div class="dropdown-divider"></div>
+          <a href="<?=base_url('panduan')?>" class="dropdown-item">
+            <i class="fas fa-book mr-2"></i>File Panduan
+            <span class="float-right text-muted text-sm">Lihat</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-divider"></div>
+          <p class="dropdown-item dropdown-footer"><br><br><br></p>
+        </div>
+      </li>
+
     <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
           <img src="<?= base_url('foto/'.session()->get('foto'))?>" class="user-image img-circle elevation-2" alt="User Image">

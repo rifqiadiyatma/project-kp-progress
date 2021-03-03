@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-6">
         <table class="table table-borderless">
-            <tr><th>Deskripsi</th><td> : </td> <td><?= $dokumen['deskripsi']?></td></tr>
+            <tr><th>Deskripsi</th><td> : </td> <td><?= wordwrap($dokumen['deskripsi'],30,"<br>\n",TRUE)?></td></tr>
             <tr><th>Komponen</th><td> : </td> <td><?= $dokumen['nama_komponen']?></td></tr>
             <tr><th>Sub Komponen</th><td> : </td> <td><?= $dokumen['nama_sub_k']?></td></tr>
             <tr><th>Nama File</th><td> : </td> <td><?= substr($dokumen['nama_dokumen'],12)?></td></tr>

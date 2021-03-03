@@ -24,15 +24,7 @@
   <link rel="stylesheet" href="/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="icon" href="<?=base_url('assets/bps.png')?>" type="image/gif">
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
-  <style>
-  .dataTables_wrapper {
-    font-size: 12.5px;
-    position: relative;
-    clear: both;
-    *zoom: 1;
-    zoom: 1;
-  }
-  </style>
+  <link rel="stylesheet" href="/assets/dist/css/bpscss.css">
 
 
 </head>

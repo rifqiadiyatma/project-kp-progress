@@ -70,7 +70,7 @@
           <input type="email" name = "email" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+              <span class="fas fa-envelope" style="color:dodgerblue"></span>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
           <input type="password" name = "password" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+              <span class="fas fa-lock" style="color:dodgerblue"></span>
             </div>
           </div>
         </div>

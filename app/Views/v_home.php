@@ -9,7 +9,7 @@
               <div class="icon">
                 <i class="far fa-copy"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?= base_url('dokumen')?>" class="small-box-footer">&nbsp;</a>
             </div>
           </div>
 
@@ -24,7 +24,7 @@
               <div class="icon">
                 <i class="fas fa-check"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <p class="small-box-footer">&nbsp;</p>
             </div>
           </div>
 
@@ -39,7 +39,7 @@
               <div class="icon">
                 <i class="fas fa-times"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <p class="small-box-footer">&nbsp;</p>
             </div>
           </div>
 
@@ -54,7 +54,7 @@
               <div class="icon">
                 <i class="far fa-user"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <p class="small-box-footer">&nbsp;</p>
             </div>
           </div>
 
@@ -140,7 +140,7 @@
       <div class="card-body mx-auto">
         <img class="img-thumbnail" src ="<?= base_url('assets/qrcode.png')?>" width=150px height=150px>
       </div>
-      <div class="card-footer mx-auto"><a href="https://bandarlampungkota.bps.go.id/" target="_blank">Link Website BPS</a></div>
+      <div class="card-footer bg-white mx-auto"><a href="https://bandarlampungkota.bps.go.id/" target="_blank">Link Website BPS</a></div>
   </div>
 
 </div>

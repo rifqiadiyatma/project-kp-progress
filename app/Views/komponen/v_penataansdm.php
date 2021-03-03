@@ -23,7 +23,7 @@
                 }
                 ?>
                 <div class="table-responsive">
-                <table class = "table table-striped table-bordered" id ="example1" style="table-layout: fixed;">
+                <table class = "table table-striped table-bordered" id ="example1">
                     <thead>
                         <tr>
                             <th class="align-middle" width="20px">No</th>                        
@@ -42,12 +42,12 @@
                         foreach($sdm as $key => $value) { ?>
                             <tr>
                                 <td class="text-center align-middle"><?= $no++; ?></td>
-                                <td class="align-middle"><?= $value['deskripsi'];?></td>
-                                <td class="align-middle"><?= substr($value['nama_dokumen'],12);?></td>
+                                <td class="align-middle"><?= wordwrap($value['deskripsi'],10,"<br>\n",TRUE);?></td>
+                                <td class="align-middle"><?= wordwrap(substr($value['nama_dokumen'],12),12,"<br>\n",TRUE);?></td>
                                 <td class="align-middle"><?= $value['nama_sub_k'];?></td>
                                 <td class="align-middle"><?= $value['nama_sub_sub_k'];?></td>
                                 <td class="align-middle text-center"><?= $value['tgl_upload']; ?></td>
-                                <td class="align-middle text-center"><?= $value['nama_user']; ?></td>
+                                <td class="align-middle text-center"><?= wordwrap($value['nama_user'],10,"<br>\n",TRUE); ?></td>
                                 <?php if($value['status']==0){ ?>
                                     <td class="project-state align-middle text-center">
                                         <span class="badge badge-danger">Belum<br>Terverifikasi</span>
