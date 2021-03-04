@@ -1,0 +1,42 @@
+CRITICAL - 2021-02-28 10:42:31 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Periode.php(18): CodeIgniter\Model->__call('allData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Periode->index()
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Periode))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-28 11:44:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::countAllReults()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Home.php(18): App\Models\ModelHome->total_dokumen()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-02-28 16:14:00 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-02-28 16:14:00 --> Unable to connect to the database.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1966): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 F:\xampp\htdocs\project_bps\app\Models\ModelHome.php(12): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 F:\xampp\htdocs\project_bps\app\Controllers\Home.php(18): App\Models\ModelHome->total_dokumen()
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-02-28 16:14:00 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in F:\xampp\htdocs\project_bps\app\Views\errors\html\error_exception.php:100
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', 'F:\\xampp\\htdocs...', 100, Array)
+#1 F:\xampp\htdocs\project_bps\app\Views\errors\html\error_exception.php(100): print_r(Object(App\Controllers\Home), true)
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Debug\Exceptions.php(281): include('F:\\xampp\\htdocs...')
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

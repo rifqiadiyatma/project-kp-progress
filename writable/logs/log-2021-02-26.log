@@ -1,0 +1,16 @@
+CRITICAL - 2021-02-26 19:04:25 --> Call to undefined function App\Models\year()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(20): App\Models\ModelDokumen->all_data()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->index()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-26 19:04:56 --> Call to undefined function App\Models\year()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(20): App\Models\ModelDokumen->all_data()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->index()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}

@@ -1,0 +1,330 @@
+CRITICAL - 2021-02-15 20:22:49 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:22:59 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:24:33 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:25:29 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:29:01 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:30:19 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:32:27 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:32:56 --> Undefined property: App\Controllers\Dokumen::$input
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 40, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:33:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSub(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:37:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSub(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:39:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:40:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK('2')
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:40:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK('1')
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:43:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK('3')
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 20:59:55 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:06:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getWhere()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:14:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:16:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:19:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(41): App\Models\ModelKomponen->getSubK(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:30:21 --> Undefined property: App\Controllers\Dokumen::$output
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:36:00 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-15 21:36:01 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-15 21:36:11 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-15 21:37:18 --> Undefined property: stdClass::$id
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 43, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:37:35 --> Undefined property: stdClass::$id
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 43, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:40:55 --> Cannot use object of type stdClass as array
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-02-15 21:44:53 --> Undefined property: stdClass::$id
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 44, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:45:37 --> Undefined property: stdClass::$id
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 44, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:46:05 --> Cannot use object of type stdClass as array
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-02-15 21:46:24 --> Undefined property: stdClass::$id
+#0 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 44, Array)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-15 21:46:58 --> Cannot use object of type stdClass as array
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->getSub()
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#2 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-02-15 22:29:15 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:29:44 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:29:45 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:29:49 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:30:27 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:30:28 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:30:28 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:30:29 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:30:29 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-02-15 22:30:29 --> You must set the database table to be used with your query.
+#0 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Model.php(834): CodeIgniter\Model->builder()
+#2 F:\xampp\htdocs\project_bps\app\Controllers\Dokumen.php(127): CodeIgniter\Model->__call('getData', Array)
+#3 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Dokumen->edit('8')
+#4 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dokumen))
+#5 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\project_bps\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\project_bps\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\xampp\\htdocs...')
+#8 {main}
