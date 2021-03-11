@@ -12,8 +12,4 @@ class ModelAuth extends Model
         ])->get()->getRowArray();
     }
 
-    public function register($data)
-    {
-        $this->db->table('tbl_user')->insert($data);
-    }
 }

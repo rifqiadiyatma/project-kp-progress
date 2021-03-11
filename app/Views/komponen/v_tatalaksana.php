@@ -27,10 +27,10 @@
                     <thead>
                         <tr>
                             <th class="align-middle" width="20px">No</th>                        
-                            <th class="align-middle">Deskripsi</th>
                             <th class="align-middle">Nama File</th>
-                            <th class="align-middle">Sub-Komponen</th>
-                            <th class="align-middle">Sub2-Komponen</th>
+                            <th class="align-middle">Komponen</th>
+                            <th class="align-middle">Sub Komponen</th>
+                            <th class="align-middle">Dokumen</th>
                             <th class="align-middle">Tanggal Upload</th>
                             <th class="align-middle">Nama User</th>
                             <th class="align-middle">Status</th>
@@ -42,10 +42,10 @@
                         foreach($tatalaksana as $key => $value) { ?>
                             <tr>
                                 <td class="text-center align-middle"><?= $no++; ?></td>
-                                <td class="align-middle"><?= wordwrap($value['deskripsi'],10,"<br>\n",TRUE);?></td>
                                 <td class="align-middle"><?= wordwrap(substr($value['nama_dokumen'],12),12,"<br>\n",TRUE);?></td>
                                 <td class="align-middle"><?= $value['nama_sub_k'];?></td>
                                 <td class="align-middle"><?= $value['nama_sub_sub_k'];?></td>
+                                <td class="align-middle"><?= $value['nama_kelengkapan']?></td>
                                 <td class="align-middle text-center"><?= $value['tgl_upload']; ?></td>
                                 <td class="align-middle text-center"><?= wordwrap($value['nama_user'],10,"<br>\n",TRUE); ?></td>
                                 <?php if($value['status']==0){ ?>
@@ -58,7 +58,7 @@
                                     </td>
                                     <?php } ?>
                                 <td class="text-center align-middle">
-                                  <a href="<?= base_url('dokumen/viewpdf/'.$value['id_dokumen']) ?>" target="_blank" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="File"> 
+                                  <a href="<?= base_url('dokumen/viewpdf/'.$value['id_dokumen']) ?>" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="File"> 
                                   <i class="fas fa-search"></i></a>
                                   <?php if(session()->get('level')==1 and $value['status']==0){ ?>
                                       <a href="<?= base_url('dokumen/verifikasi/'.$value['id_dokumen'])?>" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="Verifikasi"><i class="fas fa-check"></i></a>

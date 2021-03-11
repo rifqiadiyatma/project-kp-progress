@@ -16,6 +16,7 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',1)
@@ -29,6 +30,7 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',2)
@@ -42,6 +44,7 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',3)
@@ -55,6 +58,7 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',4)
@@ -68,6 +72,7 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',5)
@@ -81,6 +86,7 @@ class ModelKomponen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->where('tbl_dokumen.id_komponen',6)
@@ -97,4 +103,10 @@ class ModelKomponen extends Model
     {
         return $this->db->table('tbl_sub_sub_k')->where('id_sub_k',$idSubKomp)->get()->getResult();
     }
+
+    public function getKelengkapan($idSubSubKomp)
+    {
+        return $this->db->table('tbl_kelengkapan')->where('id_sub_sub_k',$idSubSubKomp)->get()->getResult();
+    }
+
 }

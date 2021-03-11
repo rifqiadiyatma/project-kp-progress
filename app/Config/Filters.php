@@ -42,12 +42,13 @@ class Filters extends BaseConfig
 			// 'honeypot',
 			'FilterAuth'=> ['except' =>[
 				'home', 'home/*',
-				'komponen', 'komponen/*',
+				'pilar', 'pilar/*',
 				'dokumen', 'dokumen/*',
 				'user', 'user/*',
 				'profile', 'profile/*',
 				'periode', 'periode/*',
-				'panduan','panduan/*'
+				'panduan','panduan/*',
+				'masterfile', 'masterfile/*'
 			]],
 		],
 	];
@@ -77,7 +78,8 @@ class Filters extends BaseConfig
 			'before' => [
 				'user','user/*',
 				'dokumen/verifikasi/*',
-				'periode','periode/*'
+				'periode','periode/*',
+				'masterfile','masterfile/*'
 			]
 		]
 	];

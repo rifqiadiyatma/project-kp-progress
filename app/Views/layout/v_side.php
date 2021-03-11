@@ -56,50 +56,83 @@
             <a href="#" <?php if($page == 'Manajemen Perubahan' or $page =='Penataan Tatalaksana' or $page =='Penataan Manajemen SDM' or $page =='Penguatan Akuntabilitas' or $page =='Penguatan Pengawasan' or $page =='Pelayanan Publik'){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
               <i class="nav-icon fab fa-buffer"></i>
               <p>
-                Komponen
+                Pilar
                 <i class="fas fa-angle-left right"></i>
                 <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item has-treeview">
-                <a href="<?= base_url('komponen/manajemen')?>" <?php if($page == "Manajemen Perubahan"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                <a href="<?= base_url('pilar/manajemen')?>" <?php if($page == "Manajemen Perubahan"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
                   <i class="fas fa-briefcase nav-icon"></i>
                   <p>Manajemen Perubahan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('komponen/tatalaksana')?>" <?php if($page == "Penataan Tatalaksana"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                <a href="<?= base_url('pilar/tatalaksana')?>" <?php if($page == "Penataan Tatalaksana"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
                   <i class="fas fa-briefcase nav-icon"></i>
                   <p>Penataan Tatalaksana</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('komponen/penataansdm')?>" <?php if($page == "Penataan Manajemen SDM"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                <a href="<?= base_url('pilar/penataansdm')?>" <?php if($page == "Penataan Manajemen SDM"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
                   <i class="fas fa-briefcase nav-icon"></i>
                   <p>Penataan SDM</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('komponen/akuntabilitas')?>" <?php if($page == "Penguatan Akuntabilitas"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                <a href="<?= base_url('pilar/akuntabilitas')?>" <?php if($page == "Penguatan Akuntabilitas"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
                   <i class="fas fa-briefcase nav-icon"></i>
                   <p>Penguatan Akuntabilitas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('komponen/pengawasan')?>" <?php if($page == "Penguatan Pengawasan"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                <a href="<?= base_url('pilar/pengawasan')?>" <?php if($page == "Penguatan Pengawasan"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
                   <i class="fas fa-briefcase nav-icon"></i>
                   <p>Penguatan Pengawasan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('komponen/pelayananpublik')?>" <?php if($page == "Pelayanan Publik"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                <a href="<?= base_url('pilar/pelayananpublik')?>" <?php if($page == "Pelayanan Publik"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
                   <i class="fas fa-briefcase nav-icon"></i>
                   <p>Pelayanan Publik</p>
                 </a>
               </li>
             </ul>
           </li>
+
+          <?php if(session()->get('level')==1){ ?>
+            <li <?php if($page == 'MasterK' or $page =='MasterS' or $page =='MasterD' ){ echo "class='nav-item has-treeview menu-open'";} else echo "class='nav-item has-treeview'" ;?>>
+            <a href="#" <?php if($page == 'MasterK' or $page =='MasterS' or $page =='MasterD'){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+              <i class="nav-icon fas fa-boxes"></i>
+              <p>
+                Master File
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item has-treeview">
+                <a href="<?= base_url('masterfile/komponen')?>" <?php if($page == "MasterK"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                  <i class="fas fa-briefcase nav-icon"></i>
+                  <p>Komponen</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('masterfile/subkomponen')?>" <?php if($page == "MasterS"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                  <i class="fas fa-briefcase nav-icon"></i>
+                  <p>Sub Komponen</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('masterfile/dokumen')?>" <?php if($page == "MasterD"){ echo "class='nav-link active'";} else echo "class='nav-link'" ;?>>
+                  <i class="fas fa-briefcase nav-icon"></i>
+                  <p>Jenis Dokumen</p>
+                </a>
+              </li>
+              </ul>
+          </li>
+          <?php } ?>
 
           <?php if(session()->get('level')==1){ ?>
           <li class="nav-item">

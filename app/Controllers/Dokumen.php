@@ -9,6 +9,7 @@ class Dokumen extends BaseController
     public function __construct(){
         helper('form');
         helper('text');
+        helper('download');
         $this->ModelDokumen = new ModelDokumen();
         $this->ModelKomponen = new ModelKomponen();
     }
@@ -49,16 +50,23 @@ class Dokumen extends BaseController
         echo json_encode($data);   
     }
 
+    public function getKelengkapan()
+    {
+        $id_sub_sub_k = $this->request->getPost('id_sub_sub_k');
+        $data = $this->ModelKomponen->getKelengkapan($id_sub_sub_k);
+        echo json_encode($data);   
+    }
+
     public function insert()
 	{
         if ($this->validate([
-            'deskripsi' => [
-                'label'  => 'Deskripsi',
-                'rules'  => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib Diisi',
-                ]
-            ],
+            // 'deskripsi' => [
+            //     'label'  => 'Deskripsi',
+            //     'rules'  => 'required',
+            //     'errors' => [
+            //         'required' => '{field} Wajib Diisi',
+            //     ]
+            // ],
             'nama_dokumen' => [
                 'label'  => 'File Dokumen',
                 'rules'  => 'uploaded[nama_dokumen]|max_size[nama_dokumen,5120]|ext_in[nama_dokumen,pdf,jpg,doc,xls,xlsx,jpeg,png,docx]',
@@ -106,7 +114,8 @@ class Dokumen extends BaseController
                 'id_komponen' => $this->request->getPost('id_komponen'),
                 'id_sub_k' => $this->request->getPost('id_sub_k'),
                 'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k'),
-                'id_periode' => date('Y') % 2020,
+                'id_periode' => date('Y') % 2018,
+                'id_kelengkapan' => $this->request->getPost('id_kelengkapan')
             );
 
             $nama_dokumen->move('file_dokumen',$nama_filebaru); //directory up file
@@ -136,13 +145,13 @@ class Dokumen extends BaseController
     public function update($id_dokumen)
     {
         if ($this->validate([
-            'deskripsi' => [
-                'label'  => 'Deskripsi',
-                'rules'  => 'required',
-                'errors' => [
-                    'required' => '{field} Wajib Diisi',
-                ]
-            ],
+            // 'deskripsi' => [
+            //     'label'  => 'Deskripsi',
+            //     'rules'  => 'required',
+            //     'errors' => [
+            //         'required' => '{field} Wajib Diisi',
+            //     ]
+            // ],
             'nama_dokumen' => [
                 'label'  => 'File Dokumen',
                 'rules'  => 'max_size[nama_dokumen,5120]|ext_in[nama_dokumen,pdf,doc,jpg,xls,xlsx,jpeg,png,docx]',
@@ -181,7 +190,8 @@ class Dokumen extends BaseController
                     'id_user' => session()->get('id_user'),
                     'id_komponen' => $this->request->getPost('id_komponen'),
                     'id_sub_k' => $this->request->getPost('id_sub_k'),
-                    'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k')
+                    'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k'),
+                    'id_kelengkapan' => $this->request->getPost('id_kelengkapan')
                 );
                 $this->ModelDokumen->edit($data);
             } else {
@@ -200,7 +210,8 @@ class Dokumen extends BaseController
                     'ukuran_dokumen' => $ukuran_dokumen,
                     'id_komponen' => $this->request->getPost('id_komponen'),
                     'id_sub_k' => $this->request->getPost('id_sub_k'),
-                    'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k')
+                    'id_sub_sub_k' => $this->request->getPost('id_sub_sub_k'),
+                    'id_kelengkapan' => $this->request->getPost('id_kelengkapan')
                 );
     
                 $nama_dokumen->move('file_dokumen',$nama_filebaru); //directory up file
@@ -251,5 +262,11 @@ class Dokumen extends BaseController
         $this->ModelDokumen->edit($data);
         session()->setFlashdata('pesan','File Berhasil Diverifikasi');
         return redirect()->back();
+    }
+
+    public function download($id_dokumen)
+    {
+        $dokumen = $this->ModelDokumen->detail_data($id_dokumen);
+		return $this->response->download('file_dokumen/'.$dokumen['nama_dokumen'], null);
     }
 }

@@ -12,11 +12,16 @@ $(document).ready( function() {
         buttons: [ {
             extend: 'excelHtml5',
             autoFilter: true,
-            sheetName: 'Exported data',         
+            sheetName: 'Export BPS',       
             exportOptions: {
             columns: 'th:not(:last-child)'
-         }
+          },
+          title: '',
+          filename: function () { 
+          var txt = prompt("Masukkan Nama File :");
+          return txt; }
         } ]
+
     } );
 } );
 
@@ -50,6 +55,7 @@ $(document).ready(function(){
           success: function(response){
             $('#subkomponen').find('option').not(':first').remove();
             $('#subsubkomponen').find('option').not(':first').remove();
+            $('#kelengkapan').find('option').not(':first').remove();
             $.each(response,function(index,data){
               $('#subkomponen').append('<option value="'+data['id_sub_k']+'">'+data['nama_sub_k']+'</option>');
             });
@@ -68,10 +74,34 @@ $(document).ready(function(){
           dataType: 'JSON',
           success: function(response){
             $('#subsubkomponen').find('option').not(':first').remove();
+            $('#kelengkapan').find('option').not(':first').remove();
             $.each(response,function(index,data){
               $('#subsubkomponen').append('<option value="'+data['id_sub_sub_k']+'">'+data['nama_sub_sub_k']+'</option>');
             });
           }
         });
     });
+    $('#subsubkomponen').change(function(){
+      var id_sub_sub_k = $(this).val();
+      $.ajax({
+        type: 'POST',
+        url : "/Dokumen/getKelengkapan",
+        data: {
+          id_sub_sub_k: id_sub_sub_k
+        },
+        dataType: 'JSON',
+        success: function(response){
+          $('#kelengkapan').find('option').not(':first').remove();
+          $.each(response,function(index,data){
+            $('#kelengkapan').append('<option value="'+data['id_kelengkapan']+'">'+data['nama_kelengkapan']+'</option>');
+          });
+        }
+      });
+  });
+});
+
+$(document).ready(function() {
+  $('.select2bs4').select2({
+    theme: 'bootstrap4'
+  })
 });

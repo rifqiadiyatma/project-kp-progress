@@ -37,17 +37,17 @@
                         <?php $no = 1;
                         foreach($user as $key => $value) { ?>
                             <tr>
-                                <td class="text-center"><?= $no++; ?></td>
-                                <td><?= $value['nama_user']; ?></td>
-                                <td><?= $value['email']; ?></td>
-                                <td><?php if ($value['level'] == 1){
+                                <td class="text-center align-middle"><?= $no++; ?></td>
+                                <td class="align-middle"><?= $value['nama_user']; ?></td>
+                                <td class="align-middle"><?= $value['email']; ?></td>
+                                <td class="align-middle"><?php if ($value['level'] == 1){
                                         echo 'Admin';
                                     }else{
                                         echo 'User';
                                     } ?>
                                 </td>
                                 <td><img src="<?= base_url('foto/'.$value['foto'])?>" width="100px" height="100px"></td>
-                                <td class="text-center">
+                                <td class="text-center align-middle">
                                 <a href="<?= base_url('user/edit/'.$value['id_user'])?>" class="btn btn-info btn-sm">
                                     <i class="fas fa-pencil-alt"></i>
                                     Edit</a>

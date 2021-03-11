@@ -11,6 +11,7 @@ class ModelDokumen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->join('tbl_periode','tbl_periode.id_periode = tbl_dokumen.id_periode', 'left')
         ->where('tbl_periode.status_periode',1)
         ->orderBy('id_dokumen','DESC')->get()->getResultArray();
@@ -23,6 +24,7 @@ class ModelDokumen extends Model
         ->join('tbl_user','tbl_user.id_user = tbl_dokumen.id_user', 'left')
         ->join('tbl_sub_k','tbl_sub_k.id_sub_k = tbl_dokumen.id_sub_k', 'left')
         ->join('tbl_sub_sub_k','tbl_sub_sub_k.id_sub_sub_k = tbl_dokumen.id_sub_sub_k', 'left')
+        ->join('tbl_kelengkapan','tbl_kelengkapan.id_kelengkapan = tbl_dokumen.id_kelengkapan', 'left')
         ->where('id_dokumen',$id_dokumen)->get()->getRowArray();
     }
 
